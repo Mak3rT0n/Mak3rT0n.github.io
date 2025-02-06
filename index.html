@@ -34,7 +34,7 @@
 
         // Fetch Data from JSON Server
         if (id) {
-            fetch(`<!--To ADD-->`)
+            fetch(`https://qr-json-server.vercel.app/locations/${id}`)
                 .then(response => {
                     if (!response.ok) throw new Error('Location not found');
                     return response.json();
